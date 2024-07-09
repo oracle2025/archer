@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "717dcbc06c1a1bbe3d5caeb8134d4b66",
+    "content-hash": "b67b42b79e2d02db2cd2bb6874aad6af",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -1187,26 +1187,34 @@
     "packages-dev": [
         {
             "name": "eloquent/liberator",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/liberator.git",
-                "reference": "8d71b1ff4794b09fc7d0e205ee994780412d3a1f"
+                "reference": "46551026cb7f0d4b786a33edd889c1a046a16b22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/liberator/zipball/8d71b1ff4794b09fc7d0e205ee994780412d3a1f",
-                "reference": "8d71b1ff4794b09fc7d0e205ee994780412d3a1f",
+                "url": "https://api.github.com/repos/eloquent/liberator/zipball/46551026cb7f0d4b786a33edd889c1a046a16b22",
+                "reference": "46551026cb7f0d4b786a33edd889c1a046a16b22",
                 "shasum": ""
             },
             "require": {
-                "eloquent/pops": "~4.1.0",
-                "php": ">=5.3"
+                "eloquent/pops": "^5",
+                "php": "^7.4 || ^8"
             },
             "require-dev": {
-                "icecave/archer": "~1"
+                "eloquent/code-style": "^2",
+                "errors/exceptions": "^0.2",
+                "friendsofphp/php-cs-fixer": "^3",
+                "phpunit/phpunit": "^9"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Eloquent\\Liberator\\": "src"
@@ -1236,31 +1244,40 @@
             ],
             "support": {
                 "issues": "https://github.com/eloquent/liberator/issues",
-                "source": "https://github.com/eloquent/liberator/tree/master"
+                "source": "https://github.com/eloquent/liberator/tree/3.0.0"
             },
-            "time": "2014-02-09T12:27:12+00:00"
+            "abandoned": true,
+            "time": "2022-02-21T08:11:35+00:00"
         },
         {
             "name": "eloquent/pops",
-            "version": "4.1.0",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/pops.git",
-                "reference": "80dbee5422347dc581d38ade92001509dce34926"
+                "reference": "3bb169960d4509fb2dfd2ffe2c17ad74b93c375d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/pops/zipball/80dbee5422347dc581d38ade92001509dce34926",
-                "reference": "80dbee5422347dc581d38ade92001509dce34926",
+                "url": "https://api.github.com/repos/eloquent/pops/zipball/3bb169960d4509fb2dfd2ffe2c17ad74b93c375d",
+                "reference": "3bb169960d4509fb2dfd2ffe2c17ad74b93c375d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": "^7.4 || ^8"
             },
             "require-dev": {
-                "icecave/archer": "~1"
+                "eloquent/code-style": "^2",
+                "errors/exceptions": "^0.2",
+                "friendsofphp/php-cs-fixer": "^3",
+                "phpunit/phpunit": "^9"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Eloquent\\Pops\\": "src"
@@ -1287,9 +1304,10 @@
             ],
             "support": {
                 "issues": "https://github.com/eloquent/pops/issues",
-                "source": "https://github.com/eloquent/pops/tree/master"
+                "source": "https://github.com/eloquent/pops/tree/5.0.0"
             },
-            "time": "2014-02-09T10:09:42+00:00"
+            "abandoned": true,
+            "time": "2022-02-21T07:43:30+00:00"
         }
     ],
     "aliases": [],
@@ -1301,5 +1319,5 @@
         "php": ">=5.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.6.0"
 }
